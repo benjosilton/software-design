@@ -21,6 +21,7 @@ DB.create_table! :rsvps do
 end
 
 # Insert initial (seed) data
+# TO ACCESS DB, TYPE "sh sql" IN TERMINAL. TO EXIT THAT, JUST TYPE .exit
 events_table = DB.from(:events)
 
 events_table.insert(title: "Bacon Burger Taco Fest", 
