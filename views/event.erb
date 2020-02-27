@@ -1,0 +1,33 @@
+
+<div class="row">
+<div class="col-md-8">
+<h3>
+<i class="fa fa-calendar-alt fa-2x"></i>    <%= @event[:date] %>
+</h3>
+<br>
+
+<h1><%= @event[:title] %> </h1>
+<br>
+
+<h6><%= @event[:description] %> </h6>
+<br><br>
+
+<h2>RSVPs</h2>
+
+
+<a href="/events/"<% @events[:id] %>"/rsvps/new" type="submit" class="btn btn-primary">RSVP Now!</a>
+
+</div>
+
+<div class="col-md-4">
+<br><br>
+<h3>When?</h3>
+<h6><%= @event[:date] %> </h6>
+<br><br>
+<h3>Where?</h3>
+<h6><%= @event[:location] %> </h6>
+<br><br>
+<h3>How many guests so far?</h3>
+<h6><i class="fa fa-thumbs-up"></i>    2</h6>
+<br><br>
+</div>
